@@ -297,7 +297,19 @@ export function placeWorldArt(root: THREE.Object3D, spec: ArtModelSpec, model: T
   const point = gridToWorld(spec.gx, spec.gy);
   const shift = nestleOffset(spec.gx, spec.gy, spec.nestle);
   model.position.set(point.x + shift.x, surfaceY, point.z + shift.z);
+  model.userData.artId = spec.id;
+  model.userData.artRole = spec.role;
   root.add(model);
+}
+
+export function stripArtById(root: THREE.Object3D, ids: string[]) {
+  const drop = new Set(ids);
+  const doomed: THREE.Object3D[] = [];
+  root.traverse((node) => {
+    const artId = String(node.userData.artId ?? node.name ?? "");
+    if (drop.has(artId)) doomed.push(node);
+  });
+  doomed.forEach((node) => node.parent?.remove(node));
 }
 
 export async function mountQuayArt(options: {

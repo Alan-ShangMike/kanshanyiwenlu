@@ -1,6 +1,7 @@
 .git
 .gitignore
 .DS_Store
+**/.DS_Store
 .env
 .env.*
 .pnpm-store
@@ -11,3 +12,5 @@ data
 coverage
 *.log
 docs
+apps/web/public/assets/art.zip
+**/*.tar.gz

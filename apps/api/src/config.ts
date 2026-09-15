@@ -25,8 +25,12 @@ const zhihuAccessSecret = process.env.ZHIHU_ACCESS_SECRET?.trim() ?? "";
 const deepSeekApiKey = process.env.DEEPSEEK_API_KEY?.trim() ?? "";
 const nodeEnv = process.env.NODE_ENV?.trim() || "development";
 const isProduction = nodeEnv === "production";
+const hackathonDemo = booleanValue(process.env.HACKATHON_DEMO, false);
 const adminToken = process.env.ADMIN_TOKEN?.trim() || "local-admin";
-const allowDevAuth = booleanValue(process.env.ALLOW_DEV_AUTH, !isProduction);
+const allowDevAuth = booleanValue(
+  process.env.ALLOW_DEV_AUTH,
+  hackathonDemo || !isProduction
+);
 const appOrigin =
   process.env.APP_ORIGIN?.trim() ||
   (isProduction ? "" : "http://localhost:5173");
@@ -35,19 +39,20 @@ if (isProduction && !appOrigin) {
   throw new Error("APP_ORIGIN is required when NODE_ENV=production.");
 }
 
-if (isProduction && adminToken === "local-admin") {
+if (isProduction && adminToken === "local-admin" && !hackathonDemo) {
   throw new Error(
     "Set a strong ADMIN_TOKEN before starting the production server."
   );
 }
 
-if (isProduction && allowDevAuth) {
+if (isProduction && allowDevAuth && !hackathonDemo) {
   throw new Error("ALLOW_DEV_AUTH must be false in production.");
 }
 
 export const config = {
   nodeEnv,
   isProduction,
+  hackathonDemo,
   workspaceRoot,
   webDistPath: join(workspaceRoot, "apps", "web", "dist"),
   port: numberValue(process.env.API_PORT, 8787),

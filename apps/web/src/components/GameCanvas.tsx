@@ -42,7 +42,7 @@ import {
   walkFloorPrism,
 } from "../game/worldGeom";
 import { lerpAngle, loadPlayerAvatar } from "../game/playerAvatar";
-import { artLandmarkCell, mountQuayArt, QUAY_ART_MODELS } from "../game/artModels";
+import { artLandmarkCell, mountQuayArt, QUAY_ART_MODELS, stripArtById } from "../game/artModels";
 import {
   addAtomOrreryLandmark,
   addBlankTenTile,
@@ -481,7 +481,14 @@ class KnowledgeIslandScene {
           ? `美术已导入 ${progress.loaded}/${progress.total}`
           : `导入美术 ${progress.loaded}/${progress.total} ${progress.current ?? ""}`;
         if (progress.loaded >= progress.total) {
-          window.setTimeout(() => this.artHud?.remove(), 8000);
+          stripArtById(this.root, ["forum-book"]);
+          const left: string[] = [];
+          this.root.traverse((node) => {
+            const id = String(node.userData.artId ?? "");
+            if (id) left.push(id);
+          });
+          this.artHud.textContent = `美术已导入 ${progress.loaded}/${progress.total} · ${left.join(",") || "无模型"}`;
+          window.setTimeout(() => this.artHud?.remove(), 12000);
         }
       }
     }).catch((error) => {

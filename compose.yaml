@@ -6,19 +6,30 @@ services:
       context: .
     restart: unless-stopped
     env_file:
-      - .env
+      - path: .env
+        required: false
     environment:
       NODE_ENV: production
       HOST: 0.0.0.0
       API_PORT: 8787
-      DATABASE_PATH: ./data/game.db
-      ALLOW_DEV_AUTH: "false"
-      SESSION_COOKIE_SECURE: "true"
-      ZHIHU_REQUIRE_OAUTH_STATE: "true"
+      DATABASE_PATH: /app/data/game.db
+      APP_ORIGIN: ${APP_ORIGIN:-http://localhost:8787}
+      ALLOW_DEV_AUTH: ${ALLOW_DEV_AUTH:-true}
+      HACKATHON_DEMO: ${HACKATHON_DEMO:-true}
+      SESSION_COOKIE_SECURE: ${SESSION_COOKIE_SECURE:-false}
+      ADMIN_TOKEN: ${ADMIN_TOKEN:-hackathon-demo-admin}
+      ZHIHU_REQUIRE_OAUTH_STATE: ${ZHIHU_REQUIRE_OAUTH_STATE:-true}
+      ZHIHU_OAUTH_APP_ID: ${ZHIHU_OAUTH_APP_ID:-}
+      ZHIHU_OAUTH_APP_KEY: ${ZHIHU_OAUTH_APP_KEY:-}
+      ZHIHU_OAUTH_REDIRECT_URI: ${ZHIHU_OAUTH_REDIRECT_URI:-}
+      ZHIHU_ACCESS_SECRET: ${ZHIHU_ACCESS_SECRET:-}
+      DEEPSEEK_BASE_URL: ${DEEPSEEK_BASE_URL:-https://api.deepseek.com}
+      DEEPSEEK_API_KEY: ${DEEPSEEK_API_KEY:-}
+      DEEPSEEK_MODEL: ${DEEPSEEK_MODEL:-deepseek-v4-flash}
     volumes:
       - ./data:/app/data
-    expose:
-      - "8787"
+    ports:
+      - "${APP_PORT:-8787}:8787"
     healthcheck:
       test:
         [
@@ -29,28 +40,6 @@ services:
         ]
       interval: 30s
       timeout: 5s
-      start_period: 20s
+      start_period: 25s
       retries: 3
     stop_grace_period: 15s
-
-  caddy:
-    image: caddy:2.10-alpine
-    restart: unless-stopped
-    depends_on:
-      app:
-        condition: service_healthy
-    environment:
-      DOMAIN: ${DOMAIN}
-      ACME_EMAIL: ${ACME_EMAIL}
-    ports:
-      - "80:80"
-      - "443:443"
-      - "443:443/udp"
-    volumes:
-      - ./deploy/Caddyfile:/etc/caddy/Caddyfile:ro
-      - caddy-data:/data
-      - caddy-config:/config
-
-volumes:
-  caddy-data:
-  caddy-config:

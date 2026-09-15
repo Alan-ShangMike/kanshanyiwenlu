@@ -24,6 +24,32 @@ deploy/Caddyfile         生产环境 HTTPS 反向代理
 docs/PRODUCT.md          完整产品与玩法方案
 ```
 
+## 提交部署（复制到服务器 + Docker）
+
+评委演示走这条。把项目拷到 2 核 2G 服务器后执行 `docker compose up`。
+完整命令见 [DOCKER.md](DOCKER.md)。
+
+```bash
+# 本机
+rsync -avz --progress \
+  --exclude node_modules --exclude .git --exclude .pnpm-store \
+  --exclude dist --exclude data --exclude .DS_Store \
+  --exclude apps/web/public/assets/art.zip \
+  ./ root@你的服务器IP:/opt/kanshan/
+
+# 服务器
+cd /opt/kanshan
+cp .env.hackathon.example .env
+# 把 APP_PORT=80，APP_ORIGIN=http://你的服务器IP
+mkdir -p data
+docker compose up -d --build
+```
+
+游戏地址：`http://你的服务器IP`。登录用「本机演示身份」。
+腾讯云轻量默认只开 80，不要用 8787。
+
+有域名再改用 `docker compose -f compose.prod.yaml up -d --build`。
+
 ## 本机开发
 
 要求 Node.js 24 或更高版本，并使用 Corepack 启用仓库声明的 pnpm。
@@ -63,7 +89,8 @@ pnpm start
 | `APP_ORIGIN` | 浏览器访问游戏的公开地址 |
 | `ADMIN_TOKEN` | 管理后台令牌，生产环境禁止使用默认值 |
 | `DATABASE_PATH` | SQLite 数据库路径 |
-| `ALLOW_DEV_AUTH` | 是否允许本机演示登录，生产环境必须为 `false` |
+| `ALLOW_DEV_AUTH` | 是否允许本机演示登录；正式生产必须为 `false` |
+| `HACKATHON_DEMO` | 黑客松演示模式，允许 Docker 里使用演示登录 |
 | `SESSION_COOKIE_SECURE` | HTTPS 生产环境必须为 `true` |
 | `ZHIHU_OAUTH_APP_ID` | 知乎 OAuth App ID |
 | `ZHIHU_OAUTH_APP_KEY` | 知乎 OAuth App Key |
@@ -163,13 +190,14 @@ openssl rand -hex 32
 ```
 
 把生成值写入 `ADMIN_TOKEN`，然后填写域名、邮箱、知乎和 DeepSeek 凭据。
+黑客松演示不要走这份配置，请看上面的「提交部署」。
 
 7. 启动完整服务：
 
 ```bash
-docker compose up -d --build
-docker compose ps
-docker compose logs -f app caddy
+docker compose -f compose.prod.yaml up -d --build
+docker compose -f compose.prod.yaml ps
+docker compose -f compose.prod.yaml logs -f app caddy
 ```
 
 当 DNS 已生效且 80/443 已开放，Caddy 会自动申请和续期 HTTPS 证书。
@@ -177,15 +205,15 @@ docker compose logs -f app caddy
 
 ```bash
 git pull
-docker compose up -d --build
+docker compose -f compose.prod.yaml up -d --build
 ```
 
 SQLite 数据保存在宿主机 `./data`。备份时停止写入并复制数据库：
 
 ```bash
-docker compose stop app
+docker compose -f compose.prod.yaml stop app
 cp data/game.db "data/game-$(date +%F).db"
-docker compose start app
+docker compose -f compose.prod.yaml start app
 ```
 
 生产环境启动时会拒绝默认管理令牌、空 `APP_ORIGIN` 和开启状态的本机

@@ -15,7 +15,9 @@
     "build": "pnpm -r build",
     "pretypecheck": "pnpm --filter @kanshan/shared build",
     "typecheck": "pnpm -r typecheck",
-    "start": "pnpm --filter @kanshan/api start"
+    "start": "pnpm --filter @kanshan/api start",
+    "docker:up": "docker compose up --build",
+    "docker:prod": "docker compose -f compose.prod.yaml up -d --build"
   },
   "devDependencies": {
     "concurrently": "^9.2.1",
