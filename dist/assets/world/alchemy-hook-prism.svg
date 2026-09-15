@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="190" viewBox="0 0 150 190">
+  <defs><linearGradient id="prism" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#ffe3a0"/><stop offset=".35" stop-color="#7bd0c3"/><stop offset=".7" stop-color="#8584ca"/><stop offset="1" stop-color="#d6819e"/></linearGradient></defs>
+  <ellipse cx="75" cy="174" rx="42" ry="9" fill="#061923" opacity=".68"/>
+  <path d="m75 14 19 48 39 6-30 28 9 43-37-22-37 22 9-43-30-28 39-6Z" fill="url(#prism)" stroke="#e7ddaa" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M75 36v70m-33-35h66m-33 35-20 28m20-28 20 28" stroke="#fff0b0" stroke-width="3" opacity=".75"/>
+  <circle cx="75" cy="71" r="9" fill="#183b4c" stroke="#f6dc78" stroke-width="3"/>
+</svg>
