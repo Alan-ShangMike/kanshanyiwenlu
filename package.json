@@ -1,0 +1,24 @@
+{
+  "name": "kanshan-element-harbor",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "pnpm@11.19.0",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "predev": "pnpm --filter @kanshan/shared build",
+    "dev": "concurrently -n api,web -c cyan,magenta \"pnpm --filter @kanshan/api dev\" \"pnpm --filter @kanshan/web dev\"",
+    "dev:api": "pnpm --filter @kanshan/api dev",
+    "dev:web": "pnpm --filter @kanshan/web dev",
+    "prebuild": "pnpm --filter @kanshan/shared build",
+    "build": "pnpm -r build",
+    "pretypecheck": "pnpm --filter @kanshan/shared build",
+    "typecheck": "pnpm -r typecheck",
+    "start": "pnpm --filter @kanshan/api start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "typescript": "^5.9.2"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "REF-HERO-QUAY",
+  "status": "ok",
+  "path": "/Users/alan/Documents/ChatGPT/知乎黑客松开发/apps/web/public/assets/art/kanshan-quay-hero.png",
+  "elapsed_s": 65.6,
+  "attempt": 1,
+  "api_size": "1920x1080",
+  "output_format": "png",
+  "finalize": {
+    "src_mode": "RGB",
+    "src_size": [
+      1920,
+      1080
+    ],
+    "format": "PNG",
+    "resized": false,
+    "out_size": [
+      1920,
+      1080
+    ],
+    "bytes": 3684989
+  }
+}

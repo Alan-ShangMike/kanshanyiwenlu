@@ -1,0 +1,25 @@
+{
+  "id": "ARCH-QUAY-GATEHOUSE",
+  "status": "ok",
+  "path": "/Users/alan/Documents/ChatGPT/知乎黑客松开发/apps/web/public/assets/art/kanshan-arch-quay-gatehouse.png",
+  "elapsed_s": 66.2,
+  "attempt": 1,
+  "api_size": "2048x2048",
+  "output_format": "png",
+  "finalize": {
+    "src_mode": "RGB",
+    "src_size": [
+      2048,
+      2048
+    ],
+    "format": "PNG",
+    "resized": false,
+    "had_alpha": false,
+    "matted": true,
+    "out_size": [
+      2048,
+      2048
+    ],
+    "bytes": 5622879
+  }
+}

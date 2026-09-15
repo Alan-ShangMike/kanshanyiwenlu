@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="190" viewBox="0 0 150 190">
+  <defs><linearGradient id="cloak" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d17d6f"/><stop offset=".45" stop-color="#705f9a"/><stop offset="1" stop-color="#294d66"/></linearGradient></defs>
+  <ellipse cx="75" cy="174" rx="38" ry="10" fill="#061923" opacity=".72"/>
+  <path d="M40 160 49 90h51l10 70-35 15Z" fill="url(#cloak)" stroke="#e2d69d" stroke-width="3"/>
+  <path d="M49 91 75 53l26 38Z" fill="#497e80" stroke="#d9d69e" stroke-width="3"/>
+  <circle cx="75" cy="69" r="17" fill="#c99078" stroke="#f0d59a" stroke-width="3"/>
+  <path d="M52 93h46M58 128h34" stroke="#e8d47b" stroke-width="4" opacity=".8"/>
+  <path d="M45 160h-12m72 0h12" stroke="#b3d8c2" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="75" cy="113" r="8" fill="#f4d576"/>
+</svg>

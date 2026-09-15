@@ -1,0 +1,25 @@
+{
+  "id": "ENV-SUN",
+  "status": "ok",
+  "path": "/Users/alan/Documents/ChatGPT/知乎黑客松开发/apps/web/public/assets/art/kanshan-env-sun.png",
+  "elapsed_s": 125.8,
+  "attempt": 1,
+  "api_size": "1024x1024",
+  "output_format": "png",
+  "finalize": {
+    "src_mode": "RGB",
+    "src_size": [
+      1024,
+      1024
+    ],
+    "format": "PNG",
+    "resized": false,
+    "had_alpha": false,
+    "matted": true,
+    "out_size": [
+      1024,
+      1024
+    ],
+    "bytes": 1041496
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "id": "REF-PLAYER-TURNAROUND",
+  "status": "ok",
+  "path": "/Users/alan/Documents/ChatGPT/知乎黑客松开发/apps/web/public/assets/art/kanshan-player-turnaround.png",
+  "elapsed_s": 86.7,
+  "attempt": 1,
+  "api_size": "2048x1152",
+  "output_format": "png",
+  "finalize": {
+    "src_mode": "RGB",
+    "src_size": [
+      2048,
+      1152
+    ],
+    "format": "PNG",
+    "resized": false,
+    "out_size": [
+      2048,
+      1152
+    ],
+    "bytes": 4614376
+  }
+}

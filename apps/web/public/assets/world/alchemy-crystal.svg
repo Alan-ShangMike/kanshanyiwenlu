@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="150" height="190" viewBox="0 0 150 190">
+  <defs><linearGradient id="crystal" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#d8c9ef"/><stop offset=".35" stop-color="#7ac8c3"/><stop offset="1" stop-color="#5163a0"/></linearGradient></defs>
+  <ellipse cx="75" cy="171" rx="43" ry="10" fill="#061923" opacity=".65"/>
+  <path d="m42 163 12-76 21-33 21 33 12 76Z" fill="url(#crystal)" stroke="#d8e8c1" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M75 54v101M54 87l21 23 21-23M54 87l21 17 21-17" fill="none" stroke="#f6e49a" stroke-width="3" opacity=".8"/>
+  <path d="M75 54V18L54 54l-12 33Z" fill="#77bcbf" stroke="#d8e8c1" stroke-width="3"/>
+  <path d="M75 18l21 36-21 33Z" fill="#7969aa" stroke="#d8e8c1" stroke-width="3"/>
+  <circle cx="75" cy="35" r="5" fill="#fff0ae"/>
+</svg>

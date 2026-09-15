@@ -1,0 +1,76 @@
+id,name_zh,priority,grid,filename,size,dropin,prompt_anchor,notes
+CHR-PLAYER-IDLE,主角站立,P0,"5,28",kanshan-player-idle.png,1024,apps/web/public/assets/art/kanshan-player-idle.png,CHR-PLAYER-IDLE,不是刘看山；赤陶斗篷人形旅人
+CHR-PLAYER-WALK,主角行走,P0,all,kanshan-player-walk.png,1024,apps/web/public/assets/art/kanshan-player-walk.png,CHR-PLAYER-WALK,东南向中步单帧
+CHR-PLAYER-INTERACT,主角交互,P0,all,kanshan-player-interact.png,1024,apps/web/public/assets/art/kanshan-player-interact.png,CHR-PLAYER-INTERACT,伸手触拱心石
+CHR-PLAYER-PORTRAIT,主角头像,P0,ui,kanshan-player-portrait.png,1024,apps/web/public/assets/art/kanshan-player-portrait.png,CHR-PLAYER-PORTRAIT,对话胸像
+REF-PLAYER-TURNAROUND,主角三视图,P0,concept,kanshan-player-turnaround.png,2048x1152,apps/web/public/assets/art/kanshan-player-turnaround.png,REF-PLAYER-TURNAROUND,设定图不进场景
+CHR-LIU-SIT,刘看山坐姿,P0,"4,25",kanshan-liu-sit-chapel.png,1024,apps/web/public/assets/art/kanshan-liu-sit-chapel.png,CHR-LIU-SIT,必须附官方三视图；禁止重设计
+CHR-LIU-IDLE,刘看山站立,P0,"4,25",idle.png,320,apps/web/public/assets/liu-kanshan/idle.png,REUSE,不要画
+CHR-LIU-GREET,刘看山招呼,P0,"4,25",greet.png,320,apps/web/public/assets/liu-kanshan/greet.png,REUSE,不要画
+CHR-LIU-COMPUTER,刘看山查阅,P1,quay,computer.png,320,apps/web/public/assets/liu-kanshan/computer.png,REUSE,不要画
+CHR-LIU-WANDER,刘看山踱步,P2,quay,wander.gif,320,apps/web/public/assets/liu-kanshan/wander.gif,REUSE,不要画
+CHR-LIU-SLEEP,刘看山打盹,P2,quay,sleep.gif,320,apps/web/public/assets/liu-kanshan/sleep.gif,REUSE,不要画
+CHR-LIU-BALL,刘看山玩球,P2,quay,ball.gif,320,apps/web/public/assets/liu-kanshan/ball.gif,REUSE,不要画
+INT-BOOK-OPEN,打开的田野笔记,P0,interact,kanshan-int-book-open.png,1024,apps/web/public/assets/art/kanshan-int-book-open.png,INT-BOOK-OPEN,醒目按E道具
+INT-BOOK-CLOSED,合上的笔记,P0,collectible,kanshan-int-book-closed.png,1024,apps/web/public/assets/art/kanshan-int-book-closed.png,INT-BOOK-CLOSED,元素观察手册
+INT-LECTERN-SYMBOL,符号记忆读经台,P0,"13,25",kanshan-int-lectern-symbol.png,1024,apps/web/public/assets/art/kanshan-int-lectern-symbol.png,INT-LECTERN-SYMBOL,element-symbol-memory
+INT-ATOM-H,氢仪轨,P0,"8,24",kanshan-int-atom-h.png,1024,apps/web/public/assets/art/kanshan-int-atom-h.png,INT-ATOM-H,atom-hydrogen
+INT-ATOM-C,碳仪轨,P0,"11,24",kanshan-int-atom-c.png,1024,apps/web/public/assets/art/kanshan-int-atom-c.png,INT-ATOM-C,atom-carbon
+INT-ATOM-O,氧仪轨,P0,"14,24",kanshan-int-atom-o.png,1024,apps/web/public/assets/art/kanshan-int-atom-o.png,INT-ATOM-O,atom-oxygen
+INT-FORUM-HEX,碳六边形论坛徽章,P0,"10,26",kanshan-int-forum-hex.png,1024,apps/web/public/assets/art/kanshan-int-forum-hex.png,INT-FORUM-HEX,atomic-forum 嵌平
+INT-RIFT-RING,每日裂隙环,P0,"13,28",kanshan-int-rift-ring.png,1024,apps/web/public/assets/art/kanshan-int-rift-ring.png,INT-RIFT-RING,daily rift 嵌平
+INT-GATE-ATOMIC,身份门1-6-8,P0,"15,25",kanshan-int-gate-atomic.png,2048,apps/web/public/assets/art/kanshan-int-gate-atomic.png,INT-GATE-ATOMIC,gate-atomic-forum
+ARCH-QUAY-CHAPEL,西礼拜堂,P0,"4,25 west",kanshan-arch-quay-chapel.png,2048,apps/web/public/assets/art/kanshan-arch-quay-chapel.png,ARCH-QUAY-CHAPEL,空座位
+ARCH-QUAY-PALACE,后宫三拱,P0,y=23,kanshan-arch-quay-palace.png,2048,apps/web/public/assets/art/kanshan-arch-quay-palace.png,ARCH-QUAY-PALACE,三拱可辨 H/C/O
+ARCH-QUAY-GATEHOUSE,东门楼建筑,P0,"15,25",kanshan-arch-quay-gatehouse.png,2048,apps/web/public/assets/art/kanshan-arch-quay-gatehouse.png,ARCH-QUAY-GATEHOUSE,可与身份门同造型更大
+ARCH-QUAY-PARAPET,前缘女墙,P0,y=31,kanshan-arch-quay-parapet.png,2048,apps/web/public/assets/art/kanshan-arch-quay-parapet.png,ARCH-QUAY-PARAPET,留桥缺口
+ENV-CYPRESS,柏树,P0,"6,31 / 10,31 / 14,31",kanshan-env-cypress.png,1024,apps/web/public/assets/art/kanshan-env-cypress.png,ENV-CYPRESS,每台地最多两棵
+ENV-SUN,扁平日盘,P0,sky,kanshan-env-sun.png,1024,apps/web/public/assets/art/kanshan-env-sun.png,ENV-SUN,无光晕脏斑
+TEX-PLASTER-CREAM,奶油灰泥,P0,quay floor,kanshan-tex-plaster-cream.png,2048,apps/web/public/assets/art/kanshan-tex-plaster-cream.png,TEX-PLASTER-CREAM,无缝禁止棋盘
+TEX-PLASTER-TERRACOTTA,赤陶灰泥,P0,quay wall,kanshan-tex-plaster-terracotta.png,2048,apps/web/public/assets/art/kanshan-tex-plaster-terracotta.png,TEX-PLASTER-TERRACOTTA,无缝
+TEX-LIP,压顶,P0,all lips,kanshan-tex-lip.png,2048,apps/web/public/assets/art/kanshan-tex-lip.png,TEX-LIP,无缝
+TEX-GOLD-INLAY,金嵌线条带,P0,bond path,kanshan-tex-gold-inlay.png,2048,apps/web/public/assets/art/kanshan-tex-gold-inlay.png,TEX-GOLD-INLAY,细线不是金砖
+REF-HERO-QUAY,无名原子庭英雄图,P0,concept,kanshan-quay-hero.png,1920x1080,apps/web/public/assets/art/kanshan-quay-hero.png,REF-HERO-QUAY,先画锁体积
+INT-LECTERN-PERIODIC,周期拼台读经台,P1,"22,23",kanshan-int-lectern-periodic.png,1024,apps/web/public/assets/art/kanshan-int-lectern-periodic.png,INT-LECTERN-PERIODIC,periodic-tile-sort
+INT-LECTERN-ORBIT,轨道连线读经台,P1,"29,17",kanshan-int-lectern-orbit.png,1024,apps/web/public/assets/art/kanshan-int-lectern-orbit.png,INT-LECTERN-ORBIT,electron-orbit-link
+INT-GATE-PERIODIC,周期廊门,P1,"18,24",kanshan-int-gate-periodic.png,1024,apps/web/public/assets/art/kanshan-int-gate-periodic.png,INT-GATE-PERIODIC,gate-periodic-gallery
+INT-GATE-ELECTRON,电子台门,P1,"25,20",kanshan-int-gate-electron.png,1024,apps/web/public/assets/art/kanshan-int-gate-electron.png,INT-GATE-ELECTRON,gate-electron-observatory
+INT-GATE-FAMILY,温室门,P1,"33,17",kanshan-int-gate-family.png,1024,apps/web/public/assets/art/kanshan-int-gate-family.png,INT-GATE-FAMILY,gate-family-greenhouse
+INT-GATE-BOND,键工坊门,P1,"37,13",kanshan-int-gate-bond.png,1024,apps/web/public/assets/art/kanshan-int-gate-bond.png,INT-GATE-BOND,gate-bond-workshop
+INT-GATE-ISOTOPE,同位素门,P1,"40,6",kanshan-int-gate-isotope.png,1024,apps/web/public/assets/art/kanshan-int-gate-isotope.png,INT-GATE-ISOTOPE,gate-isotope-vault
+INT-CATEGORY-PERIODIC,周期廊知识碑,P1,"20,22",kanshan-int-category-periodic.png,1024,apps/web/public/assets/art/kanshan-int-category-periodic.png,INT-CATEGORY-PERIODIC,periodic-gallery
+INT-CATEGORY-ELECTRON,电子台知识碑,P1,"27,18",kanshan-int-category-electron.png,1024,apps/web/public/assets/art/kanshan-int-category-electron.png,INT-CATEGORY-ELECTRON,electron-observatory
+INT-CATEGORY-FAMILY,温室知识碑,P1,"34,17",kanshan-int-category-family.png,1024,apps/web/public/assets/art/kanshan-int-category-family.png,INT-CATEGORY-FAMILY,family-greenhouse
+INT-CATEGORY-BOND,键工坊知识碑,P1,"38,11",kanshan-int-category-bond.png,1024,apps/web/public/assets/art/kanshan-int-category-bond.png,INT-CATEGORY-BOND,bond-workshop
+INT-CATEGORY-ISOTOPE,同位素知识碑,P1,"41,4",kanshan-int-category-isotope.png,1024,apps/web/public/assets/art/kanshan-int-category-isotope.png,INT-CATEGORY-ISOTOPE,isotope-vault
+INT-HOOK-NEON,空白10号石格,P1,"16,14",kanshan-int-hook-neon.png,1024,apps/web/public/assets/art/kanshan-int-hook-neon.png,INT-HOOK-NEON,blank-element-tile
+INT-HOOK-NOBLE,稀有气体三灯,P1,"28,25",kanshan-int-hook-noble.png,1024,apps/web/public/assets/art/kanshan-int-hook-noble.png,INT-HOOK-NOBLE,noble-gas-pavilion
+INT-HOOK-WATER,缺键水分子拱,P1,"35,22",kanshan-int-hook-water.png,1024,apps/web/public/assets/art/kanshan-int-hook-water.png,INT-HOOK-WATER,water-molecule-arch
+INT-HOOK-C14,碳-14回声,P1,"40,10",kanshan-int-hook-c14.png,1024,apps/web/public/assets/art/kanshan-int-hook-c14.png,INT-HOOK-C14,carbon-fourteen-echo
+ARCH-PERIODIC,周期坐标廊,P1,17-23x20-25,kanshan-arch-periodic.png,2048,apps/web/public/assets/art/kanshan-arch-periodic.png,ARCH-PERIODIC,横周期纵族
+ARCH-ELECTRON,电子观测台,P1,24-30x16-22,kanshan-arch-electron.png,2048,apps/web/public/assets/art/kanshan-arch-electron.png,ARCH-ELECTRON,核+轨道环
+ARCH-FAMILY,家族温室,P1,32-36x15-20,kanshan-arch-family.png,2048,apps/web/public/assets/art/kanshan-arch-family.png,ARCH-FAMILY,三座温室
+ARCH-BOND,键工坊,P1,35-41x9-14,kanshan-arch-bond.png,2048,apps/web/public/assets/art/kanshan-arch-bond.png,ARCH-BOND,双柱键梁
+ARCH-ISOTOPE,同位素穹室,P1,38-43x2-7,kanshan-arch-isotope.png,2048,apps/web/public/assets/art/kanshan-arch-isotope.png,ARCH-ISOTOPE,C12/C14双塔
+ENV-MESA,远景桌山,P1,world,kanshan-env-mesa.png,2048,apps/web/public/assets/art/kanshan-env-mesa.png,ENV-MESA,4-6座衬底
+TEX-SAGE,周期廊灰泥,P1,periodic,kanshan-tex-sage.png,2048,apps/web/public/assets/art/kanshan-tex-sage.png,TEX-SAGE,无缝 #5F9178
+TEX-TEAL,电子台灰泥,P1,electron,kanshan-tex-teal.png,2048,apps/web/public/assets/art/kanshan-tex-teal.png,TEX-TEAL,无缝 #4F7F96
+TEX-CORAL,温室灰泥,P1,family/water,kanshan-tex-coral.png,2048,apps/web/public/assets/art/kanshan-tex-coral.png,TEX-CORAL,无缝 #C56D62
+TEX-OCHRE,键工坊灰泥,P1,bond,kanshan-tex-ochre.png,2048,apps/web/public/assets/art/kanshan-tex-ochre.png,TEX-OCHRE,无缝 #B3875C
+TEX-SLATE,同位素灰泥,P1,isotope,kanshan-tex-slate.png,2048,apps/web/public/assets/art/kanshan-tex-slate.png,TEX-SLATE,无缝 #6D829C
+TEX-WATER,潟湖水面,P1,quay front,kanshan-tex-water.png,2048,apps/web/public/assets/art/kanshan-tex-water.png,TEX-WATER,低粗糙度
+TEX-SKY,暖雾天空,P1,world,kanshan-tex-sky.png,2048,apps/web/public/assets/art/kanshan-tex-sky.png,TEX-SKY,禁止紫蓝霓虹
+UI-SKILL-ATOMIC,技能核视,P2,hud,kanshan-ui-skill-atomic.png,512,apps/web/public/assets/art/kanshan-ui-skill-atomic.png,UI-SKILL-ATOMIC,单核一环
+UI-SKILL-PERIODIC,技能周期,P2,hud,kanshan-ui-skill-periodic.png,512,apps/web/public/assets/art/kanshan-ui-skill-periodic.png,UI-SKILL-PERIODIC,2x3空格
+UI-SKILL-VALENCE,技能价引,P2,hud,kanshan-ui-skill-valence.png,512,apps/web/public/assets/art/kanshan-ui-skill-valence.png,UI-SKILL-VALENCE,外层珠牵引
+UI-SKILL-FAMILY,技能族鸣,P2,hud,kanshan-ui-skill-family.png,512,apps/web/public/assets/art/kanshan-ui-skill-family.png,UI-SKILL-FAMILY,三灯
+UI-SKILL-BOND,技能键织,P2,hud,kanshan-ui-skill-bond.png,512,apps/web/public/assets/art/kanshan-ui-skill-bond.png,UI-SKILL-BOND,双珠连线
+UI-SKILL-ISOTOPE,技能同位,P2,hud,kanshan-ui-skill-isotope.png,512,apps/web/public/assets/art/kanshan-ui-skill-isotope.png,UI-SKILL-ISOTOPE,双核微差
+UI-PROMPT-E,交互键帽E,P2,hud,kanshan-ui-prompt-e.png,512,apps/web/public/assets/art/kanshan-ui-prompt-e.png,UI-PROMPT-E,允许字母E
+UI-BOOK-ICON,手册小图标,P2,hud,kanshan-ui-book-icon.png,512,apps/web/public/assets/art/kanshan-ui-book-icon.png,UI-BOOK-ICON,与世界书同造型
+UI-BRAND-MARK,登录品牌标,P2,login,kanshan-ui-brand-mark.png,512,apps/web/public/assets/art/kanshan-ui-brand-mark.png,UI-BRAND-MARK,烧瓶+碳六边
+LOGIN-HERO,登录英雄背景,P2,login,kanshan-login-hero.png,1920x1080,apps/web/public/assets/art/kanshan-login-hero.png,LOGIN-HERO,无UI文字
+LOADING-ORRERY,加载仪轨,P2,loading,kanshan-loading-orrery.png,1024,apps/web/public/assets/art/kanshan-loading-orrery.png,LOADING-ORRERY,碳仪轨徽章
+VFX-NICHE-LIT,壁龛检视光,P2,niches,kanshan-vfx-niche-lit.png,1024,apps/web/public/assets/art/kanshan-vfx-niche-lit.png,VFX-NICHE-LIT,叠加光
+VFX-RIFT,裂隙脉冲,P2,"13,28",kanshan-vfx-rift.png,1024,apps/web/public/assets/art/kanshan-vfx-rift.png,VFX-RIFT,细环
+VFX-UNLOCK,技能解锁环,P2,player feet,kanshan-vfx-unlock.png,1024,apps/web/public/assets/art/kanshan-vfx-unlock.png,VFX-UNLOCK,禁止烟花

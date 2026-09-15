@@ -1,0 +1,75 @@
+id,name_zh,type,platform,grid,priority,status,filename,format,prompt_section,notes
+CHR-PLAYER-IDLE,主角站立,character,quay,"5,28",P0,new,kanshan-player-idle.png,"PNG 320/1024 + 4-6f",ART_PACK §5,不是刘看山；赤陶斗篷人形旅人
+CHR-PLAYER-WALK,主角行走,character,all,—,P0,new,kanshan-player-walk.png,"PNG/GIF 6-8f",ART_PACK §5,至少东南向
+CHR-PLAYER-INTERACT,主角交互,character,all,—,P1,new,kanshan-player-interact.png,"PNG 4f",ART_PACK §5,伸手触拱心石
+CHR-LIU-IDLE,刘看山站立,character,quay,"4,25",P0,reuse,idle.png / idle.gif,320 GIF,官方资产,禁止重设计
+CHR-LIU-GREET,刘看山招呼,character,quay,"4,25",P0,reuse,greet.png / greet.gif,320 GIF,官方资产,对话开场
+CHR-LIU-WANDER,刘看山踱步,character,quay,—,P2,reuse,wander.gif,320 GIF,官方资产,
+CHR-LIU-SLEEP,刘看山打盹,character,quay,—,P2,reuse,sleep.gif,320 GIF,官方资产,
+CHR-LIU-BALL,刘看山玩球,character,quay,—,P2,reuse,ball.gif,320 GIF,官方资产,
+CHR-LIU-COMPUTER,刘看山查阅,character,quay,—,P1,reuse,computer.png / computer.gif,320 GIF,官方资产,思考姿态
+CHR-LIU-SIT,刘看山西礼拜堂坐姿,character,quay,"4,25",P0,new,kanshan-liu-sit-chapel.png,"PNG 320/1024 + 6f",ART_PACK §5,必须匹配官方三视图
+ARCH-QUAY-PLAZA,奶油广场,architecture,quay,3-16x23-31,P0,new,kanshan-quay-plaza.glb,GLB+2K,ART_PACK §6,禁止棋盘格
+ARCH-QUAY-BOND-PATH,价键细径,architecture,quay,5;28→4;25→10;26→15;25,P0,new,kanshan-quay-bond-path.glb,GLB,ART_PACK §6,细金线不是金砖
+ARCH-QUAY-MEDALLION,碳六边形徽章,architecture,quay,"10,26",P0,new,kanshan-quay-carbon-medallion.glb,GLB,ART_PACK §6,嵌平不挡走
+ARCH-QUAY-CHAPEL,西侧礼拜堂,architecture,quay,west of 4;25,P0,new,kanshan-quay-west-chapel.glb,GLB,ART_PACK §6,与后宫必须留天空缝
+ARCH-QUAY-PALACE,后宫三拱实验室,architecture,quay,north y=23,P0,new,kanshan-quay-palace.glb,GLB,ART_PACK §6,三拱可辨 禁止连体车库
+ARCH-QUAY-NICHE-H,氢壁龛仪轨,architecture,quay,"8,24",P0,new,kanshan-quay-niche-h.glb,"GLB dim/lit",ART_PACK §6,H-1 单核单环
+ARCH-QUAY-NICHE-C,碳壁龛仪轨,architecture,quay,"11,24",P0,new,kanshan-quay-niche-c.glb,"GLB dim/lit",ART_PACK §6,C-6 双壳四价
+ARCH-QUAY-NICHE-O,氧壁龛仪轨,architecture,quay,"14,24",P0,new,kanshan-quay-niche-o.glb,"GLB dim/lit",ART_PACK §6,O-8 双壳
+ARCH-QUAY-GATEHOUSE,东身份门楼,architecture,quay,"15,25",P0,new,kanshan-quay-gatehouse.glb,"GLB 4 socket states",ART_PACK §6,双塔三槽 1-6-8
+ARCH-QUAY-PARAPET,前缘女墙,architecture,quay,y=31,P0,new,kanshan-quay-parapet.glb,GLB,ART_PACK §6,胸口高 留桥缺口
+ENV-LAGOON,前缘潟湖,environment,quay,front,P0,new,kanshan-env-lagoon.glb,GLB+water tex,ART_PACK §6,衬底不是主体
+ENV-MESA,远景桌山,environment,world,—,P1,new,kanshan-env-mesas.glb,GLB,ART_PACK §6,4-6座
+ENV-SUN,扁平日盘,environment,world,—,P1,new,kanshan-env-sun.glb,GLB/quad,ART_PACK §6,无光晕脏斑
+ENV-SKY,暖雾天空,environment,world,—,P1,new,kanshan-env-sky.png,2K latlong,ART_PACK §6,禁止紫蓝霓虹
+ENV-CYPRESS,纪念碑谷柏树,prop,quay,"6,31 / 10,31 / 14,31",P1,new,kanshan-cypress.glb,GLB,ART_PACK §6,每台地最多两棵
+ARCH-PERIODIC,周期坐标廊,architecture,periodic,17-23x20-25,P1,new,kanshan-periodic-colonnade.glb,GLB,ART_PACK §7,横周期纵族
+ARCH-ELECTRON,电子观测台,architecture,electron,24-30x16-22,P1,new,kanshan-electron-observatory.glb,GLB,ART_PACK §7,核+轨道环
+ARCH-FAMILY,家族温室,architecture,family,32-36x15-20,P1,new,kanshan-family-greenhouses.glb,GLB,ART_PACK §7,碱金属/卤素/稀有气体
+ARCH-BOND,键工坊,architecture,bond,35-41x9-14,P1,new,kanshan-bond-workshop.glb,"GLB broken/linked",ART_PACK §7,双柱键梁
+ARCH-ISOTOPE,同位素穹室,architecture,isotope,38-43x2-7,P1,new,kanshan-isotope-vault.glb,GLB,ART_PACK §7,C12/C14 双塔
+ARCH-NEON,空白10号石格,architecture,neon,"16,14",P2,new,kanshan-neon-blank-tile.glb,"GLB ashen/awake",ART_PACK §7,只留原子序数10
+ARCH-NOBLE,稀有气体亭,architecture,noble,"28,25",P2,new,kanshan-noble-pavilion.glb,GLB,ART_PACK §7,三灯不成键
+ARCH-WATER,水分子拱,architecture,water,"35,22",P2,new,kanshan-water-arch.glb,"GLB broken/repaired",ART_PACK §7,H-O-H 缺键
+ARCH-C14-ECHO,碳-14回声,architecture,bond-bridge,"40,10",P2,new,kanshan-c14-echo.glb,GLB,ART_PACK §7,桥边小品
+ARCH-BRIDGE-MAIN,主阶梯键桥,architecture,bridges,see layout,P1,new,kanshan-bridge-main.glb,GLB,ART_PACK §7,细金嵌线
+ARCH-BRIDGE-SIDE,侧桥,architecture,bridges,see layout,P2,new,kanshan-bridge-side.glb,GLB,ART_PACK §7,更窄
+PROP-LECTERN,贴墙读经台,prop,"quay/periodic/electron","13,25 / 22,23 / 29,17",P1,new,kanshan-lectern.glb,GLB,ART_PACK §8,禁止路中间
+PROP-RIFT,每日裂隙环,prop,quay,"13,28",P1,new,kanshan-daily-rift.glb,GLB+VFX,ART_PACK §8,嵌平细环
+PROP-TABLET,墙知识板,prop,all,adjacent wall,P2,new,kanshan-wall-tablet.glb,GLB,ART_PACK §8,不是方尖碑
+PROP-FORUM-DAIS,论坛徽章完成态,prop,quay,"10,26",P1,new,kanshan-forum-medallion-lit.glb,GLB,ART_PACK §8,与徽章同件变体
+TEX-PLASTER-CREAM,奶油灰泥,texture,quay,—,P0,new,kanshan-tex-plaster-cream.png,2K,ART_PACK §9,看不出平铺格子
+TEX-PLASTER-TERRACOTTA,赤陶灰泥,texture,quay,—,P0,new,kanshan-tex-plaster-terracotta.png,2K,ART_PACK §9,
+TEX-LIP,压顶,texture,all,—,P0,new,kanshan-tex-lip.png,2K,ART_PACK §9,
+TEX-GOLD-INLAY,金嵌线条带,texture,all,—,P0,new,kanshan-tex-gold-inlay.png,2K strip,ART_PACK §9,不要做进地砖repeat
+TEX-SAGE,周期廊灰泥,texture,periodic,—,P1,new,kanshan-tex-sage.png,2K,ART_PACK §9,
+TEX-TEAL,电子台灰泥,texture,electron,—,P1,new,kanshan-tex-teal.png,2K,ART_PACK §9,
+TEX-CORAL,温室灰泥,texture,family/water,—,P1,new,kanshan-tex-coral.png,2K,ART_PACK §9,
+TEX-OCHRE,键工坊灰泥,texture,bond,—,P1,new,kanshan-tex-ochre.png,2K,ART_PACK §9,
+TEX-SLATE,同位素灰泥,texture,isotope,—,P1,new,kanshan-tex-slate.png,2K,ART_PACK §9,
+TEX-WATER,潟湖水面,texture,quay,—,P1,new,kanshan-tex-water.png,2K,ART_PACK §9,低粗糙度
+TEX-SKY,暖雾天空,texture,world,—,P1,new,kanshan-tex-sky.png,2K,ART_PACK §9,
+VFX-NICHE-LIT,壁龛检视光,vfx,quay,niches,P1,new,kanshan-vfx-niche-{h,c,o}.png,PNG seq,ART_PACK §10,
+VFX-SOCKET-LOCK,门楼槽点亮,vfx,quay,"15,25",P1,new,kanshan-vfx-sockets.png,PNG seq,ART_PACK §10,1/6/8
+VFX-RIFT-PULSE,裂隙脉冲,vfx,quay,"13,28",P1,new,kanshan-vfx-rift.png,PNG seq,ART_PACK §10,
+VFX-SKILL-UNLOCK,技能解锁环,vfx,player,feet,P2,new,kanshan-vfx-skill-unlock.png,8f PNG,ART_PACK §10,禁止烟花
+UI-SKILL-ATOMIC,技能图标核视,ui,hud,—,P2,new,kanshan-ui-skill-atomic.svg,SVG+PNG,ART_PACK §11,
+UI-SKILL-PERIODIC,技能图标周期,ui,hud,—,P2,new,kanshan-ui-skill-periodic.svg,SVG+PNG,ART_PACK §11,
+UI-SKILL-VALENCE,技能图标价引,ui,hud,—,P2,new,kanshan-ui-skill-valence.svg,SVG+PNG,ART_PACK §11,
+UI-SKILL-FAMILY,技能图标族鸣,ui,hud,—,P2,new,kanshan-ui-skill-family.svg,SVG+PNG,ART_PACK §11,
+UI-SKILL-BOND,技能图标键织,ui,hud,—,P2,new,kanshan-ui-skill-bond.svg,SVG+PNG,ART_PACK §11,
+UI-SKILL-ISOTOPE,技能图标同位,ui,hud,—,P2,new,kanshan-ui-skill-isotope.svg,SVG+PNG,ART_PACK §11,
+UI-PROMPT-E,交互键帽E,ui,hud,—,P2,new,kanshan-ui-prompt-e.svg,SVG,ART_PACK §11,
+UI-PANEL,知识/对话面板,ui,hud,—,P2,new,kanshan-ui-panel.svg,SVG,ART_PACK §11,半透明勿遮纪念碑
+REF-HERO-PAINTOVER,英雄镜头paintover,concept,quay,—,P0,new,kanshan-quay-hero-paintover.png,4K,ART_PACK §14,先于高模
+REF-LIU-ORTHO,刘看山三视图,reference,npc,—,P0,reuse,liu-orthographic-front-side-back.jpg,JPG,docs/art-pack/references/liu-kanshan,
+CHR-PLAYER-PORTRAIT,主角头像,character,ui,—,P0,new,kanshan-player-portrait.png,PNG 1024,PAINTING_PROMPTS,对话胸像；不是刘看山
+REF-PLAYER-TURNAROUND,主角三视图,concept,character,—,P0,new,kanshan-player-turnaround.png,PNG 2048x1152,PAINTING_PROMPTS,设定图
+INT-BOOK-OPEN,打开的田野笔记,prop,interact,—,P0,new,kanshan-int-book-open.png,PNG 1024,PAINTING_PROMPTS,醒目按E道具
+INT-BOOK-CLOSED,合上的笔记,prop,collectible,—,P0,new,kanshan-int-book-closed.png,PNG 1024,PAINTING_PROMPTS,元素观察手册
+INT-LECTERN-SYMBOL,符号记忆读经台,prop,quay,"13,25",P0,new,kanshan-int-lectern-symbol.png,PNG 1024,PAINTING_PROMPTS,element-symbol-memory
+UI-BOOK-ICON,手册小图标,ui,hud,—,P2,new,kanshan-ui-book-icon.png,PNG 512,PAINTING_PROMPTS,与世界书同造型
+UI-BRAND-MARK,登录品牌标,ui,login,—,P2,new,kanshan-ui-brand-mark.png,PNG 512,PAINTING_PROMPTS,烧瓶+碳六边
+LOGIN-HERO,登录英雄背景,ui,login,—,P2,new,kanshan-login-hero.png,PNG 1920x1080,PAINTING_PROMPTS,无UI
+LOADING-ORRERY,加载仪轨,ui,loading,—,P2,new,kanshan-loading-orrery.png,PNG 1024,PAINTING_PROMPTS,碳仪轨徽章
